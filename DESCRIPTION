@@ -1,0 +1,18 @@
+Package: horseshoenlm
+Title: Nonlinear regression using Horseshoe prior 
+Version: 0.0.1
+Authors@R: 
+    c(person("Arnab Kumar", "Maity", email = "Arnab.Maity@pfizer.com", role = c("aut", "cre")))
+Description: This package provides the posterior estimates of the regression coefficients when Horseshoe prior
+             is specified. The regression models considered here are Logistic model for binary response and Log Normal
+             Acclerated Failure Time model for right censored survival response. The linear model analysis 
+             is also available for completeness. All models provide Deviance Information Criterion (DIC) and 
+             Widely Applicable Information Criterion (WAIC). 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: survival
+RoxygenNote: 6.1.1
+Suggests: BayesLogit, boot, msm, pgdraw, mvtnorm
+
