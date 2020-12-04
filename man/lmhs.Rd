@@ -4,9 +4,19 @@
 \alias{lmhs}
 \title{Horseshoe shrinkage prior in Bayesian linear regression}
 \usage{
-lmhs(y, X, method.tau = c("fixed", "truncatedCauchy", "halfCauchy"),
-  tau = 1, method.sigma = c("fixed", "Jeffreys"), Sigma2 = 1,
-  burn = 1000, nmc = 5000, thin = 1, alpha = 0.05, Xtest = NULL)
+lmhs(
+  y,
+  X,
+  method.tau = c("fixed", "truncatedCauchy", "halfCauchy"),
+  tau = 1,
+  method.sigma = c("fixed", "Jeffreys"),
+  Sigma2 = 1,
+  burn = 1000,
+  nmc = 5000,
+  thin = 1,
+  alpha = 0.05,
+  Xtest = NULL
+)
 }
 \arguments{
 \item{y}{Response vector.}
