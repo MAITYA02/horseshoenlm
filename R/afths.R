@@ -1,33 +1,18 @@
 #' Horseshoe shrinkage prior in Bayesian survival regression
-
 #'
-
 #'
-
 #' This function employs the algorithm provided by van der Pas et. al. (2016) for
-
 #' log normal Accelerated Failure Rate (AFT) model to fit survival regression. The censored observations are updated
-
 #' according to the data augmentation approach described in Maity et. al. (2019).
-
 #'
-
 #'  The model is:
-
 #'  \eqn{t_i} is response,
-
 #'  \eqn{c_i} is censored time,
-
 #'  \eqn{t_i^* = \min_(t_i, c_i)} is observed time,
-
 #'  \eqn{w_i} is censored data, so \eqn{w_i = \log t_i^*} if \eqn{t_i} is event time and
-
 #'  \eqn{w_i = \log t_i^*} if \eqn{t_i} is right censored
-
 #'  \eqn{\log t_i=X\beta+\epsilon, \epsilon \sim N(0,\sigma^2)}.
-
 #'
-
 #' @references Maity, A. K., Carroll, R. J., and Mallick, B. K. (2019) 
 #'             "Integration of Survival and Binary Data for Variable Selection and Prediction: 
 #'             A Bayesian Approach", 
@@ -44,56 +29,30 @@
 #'             Enes Makalic and Daniel Schmidt (2016). High-Dimensional Bayesian Regularised Regression with the
 #'             BayesReg Package arXiv:1611.06649
 #'
-
 #'@param ct survival response, a \eqn{n*2} matrix with first column as response and second column as right censored indicator,
-
 #'1 is event time and 0 is right censored.
-
 #'@param X Matrix of covariates, dimension \eqn{n*p}.
-
 #'@param method.tau Method for handling \eqn{\tau}. Select "truncatedCauchy" for full
-
 #' Bayes with the Cauchy prior truncated to [1/p, 1], "halfCauchy" for full Bayes with
-
 #' the half-Cauchy prior, or "fixed" to use a fixed value (an empirical Bayes estimate,
-
 #' for example).
-
 #'@param tau  Use this argument to pass the (estimated) value of \eqn{\tau} in case "fixed"
-
 #' is selected for method.tau. Not necessary when method.tau is equal to "halfCauchy" or
-
 #' "truncatedCauchy". The default (tau = 1) is not suitable for most purposes and should be replaced.
-
 #'@param method.sigma Select "Jeffreys" for full Bayes with Jeffrey's prior on the error
-
 #'variance \eqn{\sigma^2}, or "fixed" to use a fixed value (an empirical Bayes
-
 #'estimate, for example).
-
 #'@param Sigma2 A fixed value for the error variance \eqn{\sigma^2}. Not necessary
-
 #'when method.sigma is equal to "Jeffreys". Use this argument to pass the (estimated)
-
 #'value of Sigma2 in case "fixed" is selected for method.sigma. The default (Sigma2 = 1)
-
 #'is not suitable for most purposes and should be replaced.
-
 #'@param burn Number of burn-in MCMC samples. Default is 1000.
-
 #'@param nmc Number of posterior draws to be saved. Default is 5000.
-
 #'@param thin Thinning parameter of the chain. Default is 1 (no thinning).
-
 #'@param alpha Level for the credible intervals. For example, alpha = 0.05 results in
-
 #'95\% credible intervals.
-
 #'@param Xtest test design matrix.
-
-
 #'
-
 #'@return 
 #' \item{SurvivalHat}{Predictive survival probability}
 #' \item{LogTimeHat}{Predictive log time}
@@ -113,9 +72,7 @@
 #' \item{DIC}{Devainace Information Criterion of the fitted model}
 #' \item{WAIC}{Widely Applicable Information Criterion}
 #'
-
 #' @importFrom stats dnorm pnorm rbinom rnorm var dbinom
-
 #' @examples
 #'
 #' burnin <- 500

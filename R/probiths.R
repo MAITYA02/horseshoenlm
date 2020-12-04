@@ -52,8 +52,6 @@
 #' \item{LikelihoodSamples}{Posterior samples of likelihood}
 #' \item{DIC}{Devainace Information Criterion of the fitted model}
 #' \item{WAIC}{Widely Applicable Information Criterion}
-
-
 #' @importFrom stats dnorm pnorm rbinom rnorm var dbinom
 #' 
 #' 
