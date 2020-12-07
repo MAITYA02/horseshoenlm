@@ -74,8 +74,8 @@
 #' n <- ntest + ntrain  # sample size
 #' q <- 10   # number of true predictos
 #' 
-#' beta.t <- c(sample(x = c(1, -1), size = q, replace = TRUE), rep(0, p - q))  # randomly assign sign
-#' x <- mvtnorm::rmvnorm(n, mean = rep(0, p), sigma = diag(p))    # uncorrelated design matrix
+#' beta.t <- c(sample(x = c(1, -1), size = q, replace = TRUE), rep(0, p - q))  
+#' x <- mvtnorm::rmvnorm(n, mean = rep(0, p), sigma = diag(p))    
 #' 
 #' zmean <- x %*% beta.t
 #' z <- rbinom(n, size = 1, prob = boot::inv.logit(zmean))
