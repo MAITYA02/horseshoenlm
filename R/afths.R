@@ -19,7 +19,7 @@
 #'             Journal of the Royal Statistical Society: Series C (Applied Statistics).
 #'             
 #'             Maity, A. K., Bhattacharya, A., Mallick, B. K., & Baladandayuthapani, V. (2020). 
-#'             Bayesian data integration and variable selection for pan‐cancer survival prediction
+#'             Bayesian data integration and variable selection for pan cancer survival prediction
 #'             using protein expression data. Biometrics, 76(1), 316-325.
 #'             
 #'             Stephanie van der Pas, James Scott, Antik Chakraborty and Anirban Bhattacharya (2016). horseshoe:
