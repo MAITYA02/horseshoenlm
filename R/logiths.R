@@ -1,8 +1,8 @@
 #' Horseshoe shrinkage prior in Bayesian Logistic regression
 #'
 #'
-#' This function employs the algorithm provided by van der Pas et. al. (2016) for 
-#' binary logistic model to fit bayesian logistic regression. The observations are updated 
+#' This function employs the algorithm provided by Makalic and Schmidt (2016) for 
+#' binary logistic model to fit Bayesian logistic regression. The observations are updated 
 #' according to the Polya-Gamma data augmentation of approach of Polson, Scott, and Windle (2014).
 #' 
 #'

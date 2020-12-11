@@ -1,7 +1,7 @@
 #' Horseshoe shrinkage prior in Bayesian Probit regression
 #'
 #'
-#' @description This function employs the algorithm provided by van der Pas et. al. (2016) for 
+#' @description This function employs the algorithm provided by Makalic and Schmidt (2016) for 
 #' binary probit model to fit Bayesian probit regression. The observations are updated 
 #' according to the data augmentation of approach of Albert and Chib (1993).
 #'

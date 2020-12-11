@@ -56,7 +56,7 @@ is selected for method.tau. Not necessary when method.tau is equal to"halfCauchy
 \item{WAIC}{Widely Applicable Information Criterion}
 }
 \description{
-This function employs the algorithm provided by van der Pas et. al. (2016) for 
+This function employs the algorithm provided by Makalic and Schmidt (2016) for 
 binary probit model to fit Bayesian probit regression. The observations are updated 
 according to the data augmentation of approach of Albert and Chib (1993).
 

@@ -2,8 +2,9 @@
 #'
 #'
 #' This function employs the algorithm provided by van der Pas et. al. (2016) for
-#' log normal Accelerated Failure Rate (AFT) model to fit survival regression. The censored observations are updated
-#' according to the data augmentation approach described in Maity et. al. (2019).
+#' log normal Accelerated Failure Rate (AFT) model to fit survival regression. The censored observations 
+#' are updated according to the data augmentation approach described in Maity et. al. (2019) and 
+#' Maity et. al. (2020).
 #'
 #'  The model is:
 #'  \eqn{t_i} is response,
