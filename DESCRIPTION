@@ -1,6 +1,6 @@
 Package: horseshoenlm
-Title: Nonlinear regression using horseshoe prior 
-Version: 0.0.5
+Title: Nonlinear Regression using Horseshoe Prior 
+Version: 0.0.6
 Authors@R: 
     c(person("Arnab Kumar", "Maity", email = "Arnab.Maity@pfizer.com", role = c("aut", "cre")))
 Description: Provides the posterior estimates of the regression coefficients when horseshoe prior is specified. 
